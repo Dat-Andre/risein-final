@@ -4,6 +4,5 @@ import { Keypair } from "@solana/web3.js";
 // Generate a new keypair
 let kp = Keypair.generate();
 console.log(`You have generate a new Solana wallet: ${kp.publicKey.toBase58()}`);
-console.log(`You have generate a new Solana wallet: ${kp.publicKey.toString()}`);
 
 console.log(`Solana wallet secret key: ${kp.secretKey}`);

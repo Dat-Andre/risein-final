@@ -5,7 +5,7 @@ const keypair = Keypair.fromSecretKey(new Uint8Array(wallet));
 
 // Connect to the cluster
 const connection = new Connection("https://api.devnet.solana.com");
-
+console.log("Public key:", keypair.publicKey.toBase58());
 (async () => {
   try {
     // claim 2 devnet SOL tokens
